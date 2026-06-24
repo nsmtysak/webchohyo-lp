@@ -84,6 +84,10 @@ h1,h2,h3,h4{font-weight:900;line-height:1.32;letter-spacing:.01em;}
 .nav.scrolled .nav__links{color:var(--text-sub);}
 .nav__links a:hover{color:var(--orange);}
 .nav__cta .btn{min-height:46px;font-size:15px;padding:0 22px;border-radius:12px;}
+.nav__end{display:flex;align-items:center;gap:20px;margin-left:auto;}
+.nav__home{font-size:15px;font-weight:700;color:rgba(255,255,255,.92);white-space:nowrap;transition:color .3s;}
+.nav.scrolled .nav__home{color:var(--text-sub);}
+.nav__home:hover{color:var(--orange);}
 @media(max-width:980px){.nav__links{display:none;}}
 @media(max-width:560px){.nav__cta{display:none;}}
 
@@ -352,9 +356,11 @@ h1,h2,h3,h4{font-weight:900;line-height:1.32;letter-spacing:.01em;}
       <a href="#features">特長</a>
       <a href="#organize">自動整理</a>
       <a href="#faq">Q&amp;A</a>
-      <a href="https://nsmtysak.github.io/coreworks-site/">CoreWorks ↗</a>
     </nav>
-    <div class="nav__cta"><a class="btn btn--orange" href="#contact">導入を相談する</a></div>
+    <div class="nav__end">
+      <a class="nav__home" href="https://nsmtysak.github.io/coreworks-site/">CoreWorks ↗</a>
+      <div class="nav__cta"><a class="btn btn--orange" href="#contact">導入を相談する</a></div>
+    </div>
   </div>
 </header>
 
